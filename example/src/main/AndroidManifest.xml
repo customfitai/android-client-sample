@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package= "ai.customfit.example">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="ai.customfit.android.CFMessagingService" android:permission="">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="CUSTOMFIT_CLIENT_KEY"
+            android:value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoiNWQ4MTY5MzAtMDU5Yy0xMWU5LWExYzktNTFjMzdhMDBjNDQ1IiwicHJvamVjdF9pZCI6IjQ1YThkZWYwLTQyNTEtMTFlOS05MGQ5LWMzNDJiNzJlNmI5MiIsImVudmlyb25tZW50X2lkIjoiNDVhYjllMTAtNDI1MS0xMWU5LTkwZDktYzM0MmI3MmU2YjkyIiwiZGltZW5zaW9uX2lkIjoiNDVmZDQwODAtNDI1MS0xMWU5LTkwZDktYzM0MmI3MmU2YjkyIiwiYXBpX2FjY2Vzc19sZXZlbCI6IlNFUlZFUiIsImtleV9pZCI6IjQ2MGExMWMwLTQyNTEtMTFlOS05MGQ5LWMzNDJiNzJlNmI5MiIsImlzcyI6Ilg1N0pObWpjZWVhUndPZlpKMVk0eEVKRW9rN1IySEZUIiwiaWF0IjoxNTUyMTI1MjQ0fQ.U5FReA8sAn2Q-y_nWIo8lI8AITCV8J3Ng5pRP7Quie4"/>
+
+    </application>
+</manifest>

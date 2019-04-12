@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CustomFit</string>
+    <string name="quickstart_message">Welcome to CustomFit Demo</string>
+    <string name="boolean_message">Boolean Config</string>
+    <string name="number_message">Number config</string>
+    <string name="string_message">String config</string>
+    <string name="json_message">JSON config</string>
+    <string name="color_message">Color config</string>
+    <string name="richtext_message">Rich Text config</string>
+    <string name="track_event">ADD TO CART</string>
+
+</resources>
